@@ -4,8 +4,14 @@ meta {
   seq: 6
 }
 
-patch {
-  url: http://localhost3000/movies
-  body: none
+put {
+  url: http://localhost:3000/movies/1
+  body: json
   auth: inherit
+}
+
+body:json {
+  {
+    "id": 2025
+  }
 }
